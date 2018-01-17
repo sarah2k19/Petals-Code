@@ -14,7 +14,6 @@
  *  of these potentiometers. Arduino is used to read in value changes of the 
  *  potentiometers and change the parameters of the visual, leading to a change 
  *  in size, color, shape, and motion speed.
- *  For a video demonstration, view (insert youtube link)
 */
 import processing.serial.*;
 
@@ -38,7 +37,7 @@ void setup() {
   // value for size of petal
   value = 1;
   numRotations = 0;
-  objectColor = color(0,50,100,40);  // TODODODOODOD TODODOD TODOOODODO TODODOOD CHECK INITIAL VALUE COLOR 
+  objectColor = color(0,50,100,40); 
 
   String portName = Serial.list()[0];
   myPort = new Serial(this, portName, 9600);
